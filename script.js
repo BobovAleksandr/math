@@ -53,7 +53,7 @@ function fillActionsArray() {
     actions.push('-')
   }
   if (isMultiply) {
-    actions.push('*')
+    actions.push('x')
   }
   if (isDevide) {
     actions.push('/')
@@ -75,6 +75,8 @@ startButton.addEventListener('click', () => {
 homeButton.addEventListener('click', () => {
   startScreen.classList.remove('hidden')
   trainerScreen.classList.add('hidden')
+  numbers.length = 0
+  actions.length = 0
 })
 
 let checkboxes = document.getElementsByClassName('checkbox')
@@ -128,7 +130,7 @@ function getNewTask() {
     currentAnswer = firstNumber + secondNumber
   } else if (action === '-') {
     currentAnswer = firstNumber - secondNumber
-  } else if (action === '*') {
+  } else if (action === 'x') {
     currentAnswer = firstNumber * secondNumber
   } else if (action === '/') {
     currentAnswer = firstNumber / secondNumber
