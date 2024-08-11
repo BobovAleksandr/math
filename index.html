@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Математика</title>
+</head>
+<body class="page">
+  <main class="main">
+    <section class="main__start">
+      <h1 class="main__title">
+        Настройки заданий
+      </h1>
+      <div class="main__content">
+        <div class="main__content-actions actions">
+          <h2 class="actions__title subtitle">
+            действия
+          </h2>
+          <ul class="actions__list list">
+            <li class="actions__list-item list-item">
+              <input type="checkbox" class="actions__list-item-checkbox checkbox addition-checkbox">
+              <span class="actions__list-item-text item-text">
+                сложение
+              </span>
+            </li>
+            <li class="actions__list-item list-item">
+              <input type="checkbox" class="actions__list-item-checkbox checkbox substraction-checkbox">
+              <span class="actions__list-item-text item-text">
+                вычитание
+              </span>
+            </li>
+            <li class="actions__list-item list-item">
+              <input type="checkbox" class="actions__list-item-checkbox checkbox multiply-checkbox">
+              <span class="actions__list-item-text item-text">
+                умножение
+              </span>
+            </li>
+            <li class="actions__list-item list-item">
+              <input type="checkbox" class="actions__list-item-checkbox checkbox devide-checkbox">
+              <span class="actions__list-item-text item-text">
+                деление
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="main__content-numbers numbers">
+          <h2 class="numbers__title subtitle">
+            числа
+          </h2>
+          <ul class="numbers__list list">
+            <li class="numbers__list-item list-item">
+              <input type="checkbox" class="numbers__list-item-checkbox checkbox one-digit-checkbox">
+              <span class="numbers__list-item-text item-text">
+                однозначные
+              </span>
+            </li>
+            <li class="numbers__list-item list-item">
+              <input type="checkbox" class="numbers__list-item-checkbox checkbox two-digit-checkbox">
+              <span class="numbers__list-item-text item-text">
+                двухзначные
+              </span>
+            </li>
+            <li class="numbers__list-item list-item">
+              <input type="checkbox" class="numbers__list-item-checkbox checkbox three-digit-checkbox">
+              <span class="numbers__list-item-text item-text">
+                трехзначные
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="main__button start-button button" href="" disabled>
+        ок
+      </button>
+    </section>
+    <section class="main__trainer hidden">
+      <h1 class="main__title task-title">
+      </h1>
+      <div class="main__task">
+        <span class="main__task-text">
+           
+        </span>
+      </div>
+      <form class="main__form" id="main__form">
+        <span class="footer__status">
+          
+        </span>
+        <input class="main__answer" type="number">
+        </input>
+        <button class="main__button footer-button button" href="" type="submit">
+          ок
+        </button>
+        <button class="main__button home-button button" href="./index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#FFFFFC" viewBox="0 -960 960 960">
+            <path d="M226.67-186.67h140v-246.66h226.66v246.66h140v-380L480-756.67l-253.33 190v380ZM160-120v-480l320-240 320 240v480H526.67v-246.67h-93.34V-120H160Zm320-352Z"/>
+          </svg>
+        </button>
+      </form>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
