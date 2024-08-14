@@ -141,7 +141,7 @@ function getNewTask() {
 
 form.addEventListener('submit', (event) => {
   event.preventDefault()
-  if (answerField.value == +currentAnswer) {
+  if (+answerField.value === +currentAnswer && answerField.value != '') {
     getNewTask()
     answerField.value = ''
     statusField.textContent = correctStatuses[Math.floor(Math.random() * correctStatuses.length)]
@@ -149,7 +149,7 @@ form.addEventListener('submit', (event) => {
     setTimeout(() => {
       statusField.classList.remove('transformed')
     }, 1000)
-  } else {
+  } else if (answerField.value != '') {
     answerField.value = ''
     statusField.textContent = wrongStatuses[Math.floor(Math.random() * wrongStatuses.length)]
     statusField.classList.add('transformed')
@@ -157,6 +157,7 @@ form.addEventListener('submit', (event) => {
       statusField.classList.remove('transformed')
     }, 1000)
   }
+  answerField.focus()
 })
 
 
